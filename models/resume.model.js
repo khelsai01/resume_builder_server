@@ -17,20 +17,20 @@ const resumeSchema = new mongoose.Schema({
     experience: [{
         company: { type: String },
         position: { type: String },
-        startDate: { type: Date },
-        endDate: { type: Date },
+        startDate: { type: String },
+        endDate: { type: String },
         description: { type: String }
     }],
     skills: [{ type: String }],
     certifications: [{
         name: { type: String },
-        year: { type: Date },
+        year: { type: String },
         organization: { type: String },
     }],
     projects: [{
         name: { type: String },
         description: { type: String },
-        date: { type: Date } 
+        date: { type: String } 
     }],
     summary: { type: String } 
 
