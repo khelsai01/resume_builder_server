@@ -12,7 +12,7 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.status(200).send(`Welcome to the Resume builder server`)
 })
-app.use('/resume',resumeRouter);
+app.use('/resume',auth, resumeRouter);
 app.use('/user', userRouter);
 
 const port = process.env.PORT || 8000;
